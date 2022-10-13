@@ -8,14 +8,14 @@ Version: 1.0.2
 Author URI: https://haha.nl
 */
 
-// fix on CGI systems
-// also needs this in htaccess
+// needed on some servers to make basic auth work
 /*
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 </IfModule>
 */
+
 /*
 // use HHdev Bedrock authentication
 Config::define('HTTP_AUTH_USER_NAME', 'username' );
