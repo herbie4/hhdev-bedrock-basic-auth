@@ -11,7 +11,7 @@
  Config::define('HTTP_AUTH_USER_NAME', 'username' );
  Config::define('HTTP_AUTH_USER_PASS', 'password' );
  Config::define('HTTP_AUTH_ENABLED', true ); // use true or false
- Config::define('HTTP_AUTH_AREA', 'login' ); // use 'site' or 'login'
+ Config::define('HTTP_AUTH_LEVEL', 'login' ); // use 'site' or 'login'
  ```
 
  If basic authentication doesn't work on some servers, try and use the code below in webroot .htaccess. New WordPress versions already add this in the default rewrite rules. Just check if it is there already.
