@@ -1,14 +1,14 @@
 <?php
 /*
-Plugin Name: HHdev Bedrock Basic Auth
-Plugin URI: https://haha.nl
+Plugin Name: HHdev Bedrock Basic Authentication
+Plugin URI: https://haha.nl/wordpress-plug-in-op-maat/
 Description: Basic auth for the Bedrock WordPress framework. Optional authenticate whole site or just login. Works with default wp-login.php or with WPS Hide Login plug-in changed url.
-Author: herbert hoekstra - haha!
+Author: herbert hoekstra - haha.nl - hrbrt.dev
 Version: 1.0.2
 Author URI: https://haha.nl
 */
 
-// temp fix on CGI systems
+// fix on CGI systems
 // also needs this in htaccess
 /*
 <IfModule mod_rewrite.c>
@@ -18,8 +18,8 @@ RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 */
 /*
 // use HHdev Bedrock authentication
-Config::define('HTTP_AUTH_USER_NAME', 'toegang' );
-Config::define('HTTP_AUTH_USER_PASS', 'toegestaan' );
+Config::define('HTTP_AUTH_USER_NAME', 'username' );
+Config::define('HTTP_AUTH_USER_PASS', 'password' );
 Config::define('HTTP_AUTH_ENABLED', true ); // use true or false
 //Config::define('HTTP_AUTH_AREA', 'login' ); // use 'site' or 'login'
 */
