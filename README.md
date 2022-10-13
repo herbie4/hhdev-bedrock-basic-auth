@@ -17,12 +17,10 @@
  If basic authentication doesn't work on some servers, try and use the code below in webroot .htaccess. New WordPress versions already add this in the default rewrite rules. Just check if it is there already.
 
  ```
- /*
  <IfModule mod_rewrite.c>
  RewriteEngine On
  RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
  </IfModule>
- */
  ```
 
  ## Change Log
