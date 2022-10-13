@@ -13,6 +13,9 @@
  Config::define('HTTP_AUTH_ENABLED', true ); // use true or false
  Config::define('HTTP_AUTH_LEVEL', 'login' ); // use 'site' or 'login'
  ```
+## Remarks
+
+ It should also work on default WordPress setups, but not tested. Just put the file hhdev-bedrock-basic-auth.php into mu-plugins and use the normal define() method in wp-config (so without Config::).
 
  If basic authentication doesn't work on some servers, try and use the code below in webroot .htaccess. New WordPress versions already add this in the default rewrite rules. Just check if it is there already.
 
